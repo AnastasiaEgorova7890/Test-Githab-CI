@@ -1,9 +1,10 @@
 import pytest
-from src.main import (
+
+from src.main import (  # Замените на актуальное имя модуля
     BadClass,
-    viking_cafe_order,
     compute_other_thing,
-)  # Замените на актуальное имя модуля
+    viking_cafe_order,
+)
 
 
 def test_bad_class_get_value():
