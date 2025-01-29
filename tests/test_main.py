@@ -23,11 +23,11 @@ def test_bad_class_it_will_fail() -> None:  # Добавлена аннотац�
         bad_class_instance.it_will_fail()
 
 
-def test_viking_cafe_order():
+def test_viking_cafe_order() -> None:  # Добавлена аннотация типа -> None
     result = viking_cafe_order("spam", "beans", "eggs")
     assert result == "spamspamspam", f"Expected 'spamspamspam', but got {result}"
 
 
-def test_compute_other_thing():
+def test_compute_other_thing() -> None:  # Добавлена аннотация типа -> None
     result = compute_other_thing()
     assert result == "Handled error", f"Expected 'Handled error', but got {result}"
