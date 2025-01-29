@@ -1,6 +1,5 @@
 from typing import Optional
 
-
 class BadClass:
     value: str = "42"
 
@@ -13,7 +12,7 @@ class BadClass:
         else:
             return False
 
-    def it_will_fail(self):
+    def it_will_fail(self) -> None:
         return self.other_value
 
 
@@ -22,7 +21,7 @@ def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
     return spam + spam + spam
 
 
-def compute_other_thing():
+def compute_other_thing() -> str:  # Добавлена аннотация для возвращаемого значения
     try:
         1 / 0
     except ZeroDivisionError:
