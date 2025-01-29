@@ -15,7 +15,8 @@ class BadClass:
             return False
 
     def it_will_fail(self) -> str:
-        return self.other_value
+        # Генерация ошибки AttributeError
+        raise AttributeError("This is the expected error")
 
 
 def viking_cafe_order(spam: str, beans: str, eggs: Optional[str] = None) -> str:
