@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class BadClass:
     value: str = "42"
 
